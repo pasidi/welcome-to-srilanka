@@ -1,0 +1,141 @@
+<body style="background-image: url('../kovil.jpg'); background-position: center; background-size: cover;">  
+
+    <style>
+        body {
+            color: white;
+        }
+
+        a {
+            color: aliceblue;
+            max-width: fit-content;
+            font-size: larger;
+            padding-left: 200px;
+            line-height: 30px;
+        }
+
+        a:hover {
+            color: rgb(237, 255, 78);
+            font-size: x-large;
+            transition: 300ms;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .box {
+            background-color: rgba(66, 66, 66, 0.692);
+            margin: 10px;
+            height: 97vh;
+            border-radius: 12px;
+            overflow-y: scroll;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+            overflow: hidden;
+        }
+
+        .slider {
+            position: relative;
+            width: 500px;
+            max-width: 800px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            height: 300px;
+            margin: 10px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            z-index: 10;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        p {
+            padding: 10px;
+        }
+    </style>
+
+    <div class="box">
+        <h1>The Nortern Province</h1>
+
+        <br>   
+
+        <div class="slider">
+            <div class="slides">
+                <!-- Slide 1 -->
+                <div class="slide" style="background-image: url('../library.jpg');"></div>
+                <!-- Slide 2 -->
+                <div class="slide" style="background-image: url('../kovil2.jpg');"></div>
+                <!-- Slide 3 -->
+                <div class="slide" style="background-image: url('../jaffna.jpg');"></div>
+            </div>
+
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        
+        <p> The Northern Province is one of the nine provinces of Sri Lanka.
+            The province has an area of 8,884 km2, making it the 3rd largest province by area, and a population of 1,061,315, making it the least populated province. 
+            Jaffna is the capital city of the province.
+            Between 1988 and 2006, the province was temporarily merged with the Eastern Province into one province, the North Eastern Province. Due to its large Tamil population, the Northern Province is sometimes referred to as "Sri Lanka's Tamil country".
+            The majority of the fighting in the Sri Lankan Civil War took place in the Northern province.
+        </p>
+
+        <ul><h2>Special Places To Visit - </h2>
+
+            <li>Jaffna Fort </li>
+            <li>Nagadeepa Temple</li>
+            <li>Shrine Of Our Lady Of Madhu</li>
+            <li>Nallur Kovil</li>
+            <li>Library Of Jaffna</li>
+            
+        </ul>
+
+
+    </div>
+
+    <script src="../slider.js"></script>
+
+</body>    
