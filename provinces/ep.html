@@ -1,0 +1,141 @@
+<body style="background-image: url('../badulla.jpg'); background-position: center; background-size: cover;">  
+
+    <style>
+        body {
+            color: white;
+        }
+
+        a {
+            color: aliceblue;
+            max-width: fit-content;
+            font-size: larger;
+            padding-left: 200px;
+            line-height: 30px;
+        }
+
+        a:hover {
+            color: rgb(237, 255, 78);
+            font-size: x-large;
+            transition: 300ms;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .box {
+            background-color: rgba(66, 66, 66, 0.692);
+            margin: 10px;
+            height: 97vh;
+            border-radius: 12px;
+            overflow-y: scroll;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+            overflow: hidden;
+        }
+
+        .slider {
+            position: relative;
+            width: 500px;
+            max-width: 800px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            height: 300px;
+            margin: 10px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            z-index: 10;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        p {
+            padding: 10px;
+        }
+    </style>
+
+    <div class="box">
+        <h1>The Uva Province</h1>
+
+        <br>   
+
+        <div class="slider">
+            <div class="slides">
+                <!-- Slide 1 -->
+                <div class="slide" style="background-image: url('../monara.jpg');"></div>
+                <!-- Slide 2 -->
+                <div class="slide" style="background-image: url('../ali.jpg');"></div>
+                <!-- Slide 3 -->
+                <div class="slide" style="background-image: url('../ella.jpg');"></div>
+            </div>
+
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        
+        <p> The Uva Province is one of the nine provinces of Sri Lanka. 
+            The province has an area of 8,500 km2 and a population of 1,266,463, making it the 2nd least populated province. 
+            The provincial capital is Badulla.
+            Uva is bordered by the Eastern, Southern, Sabaragamuwa, and Central provinces. 
+            It is home to several tourist attractions, waterfalls and two national parks: Yala National Park and Gal Oya National Park.
+        </p>
+
+        <ul><h2>Special Places To Visit - </h2>
+
+            <li>Yala National Park </li>
+            <li>Gal Oya National Bird Park</li>
+            <li>Waterfalls</li>
+            <li>Maligawila Temple</li>
+            <li>Udawalawa National Park</li>
+            
+        </ul>
+            
+
+    </div>
+
+    <script src="../slider.js"></script>
+
+</body>    
