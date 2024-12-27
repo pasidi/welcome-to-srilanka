@@ -1,0 +1,163 @@
+<body style="background-image: url('/Kurunegala.jpg'); background-position: center; background-size: cover;">  
+
+    <style>
+        body {
+            color: white;
+        }
+
+        a {
+            color: aliceblue;
+            max-width: fit-content;
+            font-size: larger;
+            padding-left: 200px;
+            line-height: 30px;
+        }
+
+        a:hover {
+            color: rgb(237, 255, 78);
+            font-size: x-large;
+            transition: 300ms;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .box {
+            background-color: rgba(66, 66, 66, 0.692);
+            margin: 10px;
+            height: 97vh;
+            border-radius: 12px;
+            overflow-y: scroll;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+            overflow: hidden;
+        }
+
+        .slider {
+            position: relative;
+            width: 500px;
+            max-width: 800px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            height: 300px;
+            margin: 10px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            z-index: 10;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        p {
+            padding: 10px;
+        }
+    </style>
+
+    <div class="box">
+        <h1>The North Western Province</h1>
+
+        <br>   
+
+        <div class="slider">
+            <div class="slides">
+                <!-- Slide 1 -->
+                <div class="slide" style="background-image: url('../kuru.jpg');"></div>
+                <!-- Slide 2 -->
+                <div class="slide" style="background-image: url('../Puttalam.jpg');"></div>
+                <!-- Slide 3 -->
+                <div class="slide" style="background-image: url('../athugala.JPG');"></div>
+            </div>
+
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        
+        <p> North Western Province is a province of Sri Lanka. 
+            It is the fourth-largest province by land area, covering 7,888 km2 (3,046 sq mi), and the fourth-most populated province with a population of over 2,592,000 people.
+            North Western Province is bordered by the North Central Province, Sri Lanka to the north, Central Province, Sri Lanka to the east, Sabaragamuwa Province to the southeast, Western Province, Sri Lanka to the south, and is bounded by the Indian Ocean to the west.
+            
+            <br>
+            
+            The province encompasses a variety of climates and geographical features, from its coastal regions to the central highlands and plains. 
+            The majority of the population is concentrated in the urban centers of Kurunegala, the provincial capital, and Puttalam. Kurunegala is the largest city in the province and serves as a major commercial and administrative hub. 
+            Puttalam, located on the western coast, is known for its lagoon and salt production.
+
+            <br>
+
+            The region has numerous archaeological sites, including the ancient rock fortress of Yapahuwa and the Panduwasnuwara ruins. 
+            European colonization began with the Portuguese Empire in the 16th century, followed by the Dutch Empire and the British Empire. 
+            The province was established in its current form in 1833 during British Ceylon era and became part of the independent Dominion of Ceylon in 1948, later becoming the Democratic Socialist Republic of Sri Lanka.        
+            
+            <br>
+            
+            During the Sri Lankan civil war the Puttalam District was considered a part of proposed Tamil Eelam by the Tamil Tigers, despite the smaller Tamil population.          
+            The economy of North Western Province is primarily based on Agriculture, Manufacturing, Fishing, and small-scale industries. 
+            Major agricultural products include coconut, rice, and spices, while the coastal areas are known for their fishing industry, the urban areas such as Kurunegala, Kuliyapitiya, Nikaweratiya and Mawathagama is famous for their Industries. 
+            The province also has significant mineral resources, including limestone and ilmenite.
+
+            <br>
+            
+            North Western Province is known for its cultural heritage, with numerous festivals, traditional dances, and local crafts. It is home to several important religious sites, including the Munneswaram temple and the St. Anne's Church in Thalawila, which attract pilgrims from across the country. The province's natural attractions, such as the Wilpattu National Park and the Puttalam Lagoon, are popular with tourists.
+        </p>
+
+        <ul><h2>Special Places To Visit - </h2>
+
+            <li>Aced Indipendents Squre</li>
+            <li>Kaluthara Temple</li>
+            <li>Katunayaka Airport</li>
+            <li>National Museum</li>
+            <li>loutas Tower</li>
+            
+        </ul>
+            
+
+    </div>
+
+    <script src="../slider.js"></script>
+
+</body>    
+
