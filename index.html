@@ -8,6 +8,33 @@
     <body style="background-image: url('./17.jpg'); background-position: center; background-size: cover;">  
 
         <style>
+            /* Applies to Chrome, Edge, and Safari */
+            ::-webkit-scrollbar {
+            width: 10px; /* Width of the scrollbar */
+            height: 10px; /* Height of the scrollbar (for horizontal scrolling) */
+            }
+
+            ::-webkit-scrollbar-track {
+            background: #f4f4f4; /* Background of the scrollbar track */
+            border-radius: 5px; /* Rounded corners for the track */
+            }
+
+            ::-webkit-scrollbar-thumb {
+            background: #888; /* Color of the scrollbar handle */
+            border-radius: 5px; /* Rounded corners for the handle */
+            border: 2px solid #f4f4f4; /* Creates space around the handle */
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+            background: #555; /* Darker handle on hover */
+            }
+
+            /* For Firefox */
+            * {
+            scrollbar-width: thin; /* Thin scrollbar */
+            scrollbar-color: #888 #f4f4f4; /* Handle color, track color */
+            }
+
             a {
                 color: aliceblue;
                 max-width: fit-content;
@@ -25,11 +52,35 @@
             h1 {
                 text-align: center;
             }
+            
+            .banner {
+                position: absolute; 
+            }
+
+            @media (max-width: 1200px) {
+                .a {
+                    padding-top: 400px;
+                }
+                h1 {
+                    font-size: 100px;
+                    padding-top: -10px;
+                }
+            }
+
+            
+
+            
         </style>
 
         <font color ="white"><h1>Welcome</h1></font>
 
-        <h2><font color ="white">Welcome To Sri Lanka</font></h2>
+        <div class="box1">
+            <img src="./sigiriya.jpg" class="banner" style="width: 300px; right: 400px; top: 200px; border-radius: 100%;">
+            <img src="./aliya.jpg" class="banner" style="width: 300px; right: 140px; top: 110px; border-radius: 100%;">
+            <img src="./maligawa.jpg" class="banner" style="width: 300px; right: 190px; top: 330px; border-radius: 100%;">
+        </div>
+
+        <h2 class="a"><font color ="white">Welcome To Sri Lanka</font></h2>
 
             <ul style="padding-left: 100px;">
 
@@ -59,9 +110,7 @@
         <br>
 
         <!-- <h1>Select The Places-</h>--->
-                    <img src="./sigiriya.jpg" style="width: 300px; position: absolute; right: 400px; top: 200px; border-radius: 100%;">
-                    <img src="./aliya.jpg" style="width: 300px; position: absolute; right: 140px; top: 110px; border-radius: 100%;">
-                    <img src="./maligawa.jpg" style="width: 300px; position: absolute; right: 190px; top: 330px; border-radius: 100%;">
+                    
 
                     <br>
                     <br>
